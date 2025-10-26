@@ -1,0 +1,84 @@
+                ┌─────────────────────┐
+                │  hamta_data.py      │
+                │  (hämtar CSV från   │
+                │  football-data.co.uk│
+                └─────────┬───────────┘
+                          │
+                          ▼
+                ┌─────────────────────┐
+                │  fetch_ligor.py     │
+                │  (loopar över ligor │
+                │  & säsonger, sparar │
+                │  i data/)           │
+                └─────────┬───────────┘
+                          │
+                          ▼
+                ┌─────────────────────┐
+                │   data/             │
+                │   (rådata CSV)      │
+                └─────────┬───────────┘
+                          │
+                          ▼
+                ┌─────────────────────┐
+                │  träna_liga.py      │
+                │  (tränar Poisson-   │
+                │  modeller per liga, │
+                │  sparar parametrar) │
+                └─────────┬───────────┘
+                          │
+                          ▼
+                ┌─────────────────────┐
+                │  train.py           │
+                │  (kör träna_liga på │
+                │  alla ligor, loggar │
+                │  Brier/ECE)         │
+                └─────────┬───────────┘
+                          │
+                          ▼
+        ┌──────────────────────────────────────┐
+        │   modeller/        modellparametrar/ │
+        │   (*.pkl)          (*.json, loggar)  │
+        └─────────┬────────────────────────────┘
+                  │
+                  ▼
+        ┌─────────────────────┐
+        │  predict.py         │
+        │  (laddar modeller,  │
+        │  beräknar mål,      │
+        │  sannolikheter,     │
+        │  målmatris)         │
+        └─────────┬───────────┘
+                  │
+                  ▼
+        ┌─────────────────────┐
+        │  app.py             │
+        │  (Streamlit-GUI:    │
+        │  välj liga/lag,     │
+        │  visa prognoser,    │
+        │  historik, H2H,     │
+        │  ligajämförelse)    │
+        └─────────────────────┘
+
+/stryk
+├── config.py              # Centrala sökvägar och standardinställningar
+├── install.bat            # Skapar virtuell miljö och installerar paket
+├── start.bat              # Startmeny för att hämta data, träna modeller, köra appen
+├── processflöde.txt       # Dokumentation/anteckningar (den här filen)
+├── README.md              # Projektbeskrivning
+├── requirements.txt       # Paketlista
+│
+├── data/                  # Hämtade CSV-filer (från fetch_ligor.py)
+├── logs/                  # Loggar (kan fyllas om logging aktiveras)
+├── modeller/              # Sparade modeller (*.pkl)
+├── modellparametrar/      # Parametrar, loggar, grafer (*.json, *.csv, *.png)
+│
+├── src/                   # All Pythonkod
+│   ├── __init__.py        # Gör src till ett paket
+│   ├── app.py             # Streamlit-appen (gränssnittet)
+│   ├── fetch_ligor.py     # Loopar över ligor/säsonger och sparar i data/
+│   ├── hamta_data.py      # Hämtar en ligasäsong från football-data.co.uk
+│   ├── predict.py         # Laddar modeller, gör prognoser
+│   ├── train.py           # Kör träning för alla ligor
+│   └── träna_liga.py      # Tränar modell för en specifik liga
+│
+└── venv312/               # Virtuell miljö (ignoreras i versionskontroll)

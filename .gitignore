@@ -1,0 +1,17 @@
+# Virtuella miljöer
+venv/
+venv312/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data och modeller (genereras om)
+data/
+modeller/
+modellparametrar/
+logs/
+
+# OS-specifika filer
+.DS_Store
+Thumbs.db
