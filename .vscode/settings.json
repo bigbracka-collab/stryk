@@ -1,0 +1,8 @@
+﻿{
+  "python.defaultInterpreterPath": "venv312/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "./",
+    "./src"
+  ],
+  "python.envFile": "${workspaceFolder}/.vscode/.env"
+}

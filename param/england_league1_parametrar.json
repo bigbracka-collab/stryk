@@ -1,0 +1,13 @@
+{
+  "liga": "england_league1",
+  "alpha": 0.2,
+  "lambda": 0.25,
+  "K": 15,
+  "H": 50,
+  "brier_score_valid": 0.20933,
+  "ece_valid": 0.16832,
+  "form_factor": 1.0,
+  "zero_inflation": 1.0,
+  "max_goals": 8,
+  "notes": "Pre-match Elo/Form utan läckor + tidsvalidering (senaste säsong eller sista 20%)."
+}

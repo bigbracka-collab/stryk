@@ -1,0 +1,4 @@
+division,ok,seconds,params_path,model_home_path,model_away_path,note,metrics_brier,metrics_ece
+england_championship,True,13.19164490699768,C:\Users\jorge\stryk\param\england_championship_parametrar.json,C:\Users\jorge\stryk\modeller\england_championship_home.pkl,C:\Users\jorge\stryk\modeller\england_championship_away.pkl,,0.22023,0.16031
+england_league1,True,10.142619132995605,C:\Users\jorge\stryk\param\england_league1_parametrar.json,C:\Users\jorge\stryk\modeller\england_league1_home.pkl,C:\Users\jorge\stryk\modeller\england_league1_away.pkl,,0.20933,0.16832
+england_premier,True,4.551116943359375,C:\Users\jorge\stryk\param\england_premier_parametrar.json,C:\Users\jorge\stryk\modeller\england_premier_home.pkl,C:\Users\jorge\stryk\modeller\england_premier_away.pkl,,0.19803,0.24763

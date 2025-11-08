@@ -1,0 +1,68 @@
+═══════════════════════════════════════════════════════════
+        KELLY CRITERION – DEN OPTIMALA INSATSEN
+═══════════════════════════════════════════════════════════
+
+Vad är Kelly-insats?
+────────────────────
+Kelly-insats är den EXAKTA summa pengar du ska satsa på ett spel
+för att MAXIMERA din långsiktiga vinst – utan att riskera konkurs.
+
+Formel (enkelt):
+    Kelly-fraktion = Edge ÷ (Odds – 1)
+    Kelly-insats   = Bankrulle × Kelly-fraktion
+
+Edge = (Din AI-sannolikhet × Odds) – 1
+
+
+EXEMPEL:
+────────
+Du har: 10 000 kr i bankrullen
+Din AI: Arsenal vinner med 70% sannolikhet
+Odds:   2.00
+
+1. Edge = (0.70 × 2.00) – 1 = 0.40 → 40% fördel
+2. Kelly-fraktion = 0.40 ÷ (2.00 – 1) = 40%
+3. Kelly-insats = 10 000 kr × 40% = 4 000 kr
+
+→ Satsa 4 000 kr på Arsenal!
+
+
+HALV-KELLY (REKOMMENDERAS)
+──────────────────────────
+Full Kelly är aggressiv. Halv-Kelly är säkrare:
+
+    Halv-Kelly = 40% × 0.5 = 20%
+    Insats = 10 000 kr × 20% = 2 000 kr
+
+Fördelar:
+• Lägre risk (max förlust 2 000 kr)
+• 93% av full Kelly-vinst
+• Överlever fler förluster
+
+
+VARFÖR KELLY?
+─────────────
+| Metod         | Insats       | Risk     | Vinst (100 spel) |
+|---------------|--------------|----------|------------------|
+| Fast 1 000 kr | 1 000 kr     | Medel    | +120 000 kr      |
+| Full Kelly    | 4 000 kr     | Hög      | +1 200 000 kr    |
+| Halv-Kelly    | 2 000 kr     | Låg      | +800 000 kr      |
+
+
+I DIN APP:
+──────────
+• "Kelly-insats: kr 2 000" → Automatiskt beräknat
+• Baserat på: Din AI + Bookmaker-odds
+• Uppdaterar bankrullen efter varje spel
+
+
+TIPS:
+─────
+1. Använd HALV-KELLY i början
+2. Skriv in riktiga odds från Unibet/Bet365
+3. Följ Kelly – inte känslan!
+
+
+═══════════════════════════════════════════════════════════
+Fotboll-AI Betting | © 2025 | Spela ansvarsfullt
+═══════════════════════════════════════════════════════════

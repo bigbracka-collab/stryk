@@ -15,3 +15,8 @@ logs/
 # OS-specifika filer
 .DS_Store
 Thumbs.db
+
+# SÄKERHET: API-nycklar och hemligheter
+.env
+.env.local
+*.env

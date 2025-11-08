@@ -1,0 +1,40 @@
+{
+  "generated_at": "2025-11-04 20:26:16",
+  "dry_run": false,
+  "seed": 42,
+  "results": [
+    {
+      "division": "england_championship",
+      "ok": true,
+      "seconds": 13.19164490699768,
+      "params_path": "C:\\Users\\jorge\\stryk\\param\\england_championship_parametrar.json",
+      "model_home_path": "C:\\Users\\jorge\\stryk\\modeller\\england_championship_home.pkl",
+      "model_away_path": "C:\\Users\\jorge\\stryk\\modeller\\england_championship_away.pkl",
+      "note": null,
+      "metrics_brier": 0.22023,
+      "metrics_ece": 0.16031
+    },
+    {
+      "division": "england_league1",
+      "ok": true,
+      "seconds": 10.142619132995605,
+      "params_path": "C:\\Users\\jorge\\stryk\\param\\england_league1_parametrar.json",
+      "model_home_path": "C:\\Users\\jorge\\stryk\\modeller\\england_league1_home.pkl",
+      "model_away_path": "C:\\Users\\jorge\\stryk\\modeller\\england_league1_away.pkl",
+      "note": null,
+      "metrics_brier": 0.20933,
+      "metrics_ece": 0.16832
+    },
+    {
+      "division": "england_premier",
+      "ok": true,
+      "seconds": 4.551116943359375,
+      "params_path": "C:\\Users\\jorge\\stryk\\param\\england_premier_parametrar.json",
+      "model_home_path": "C:\\Users\\jorge\\stryk\\modeller\\england_premier_home.pkl",
+      "model_away_path": "C:\\Users\\jorge\\stryk\\modeller\\england_premier_away.pkl",
+      "note": null,
+      "metrics_brier": 0.19803,
+      "metrics_ece": 0.24763
+    }
+  ]
+}
